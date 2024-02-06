@@ -2,7 +2,7 @@ public class Bike {
 
     private boolean isOn;
     private int speedometer;
-    private int gear = 1;
+    private int gear;
 
     public boolean checkStatus() {
         return isOn;

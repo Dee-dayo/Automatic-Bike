@@ -44,7 +44,7 @@ public class bikeTest {
     public void accelerateBike_speedIncreases(){
         assertFalse(myBike.checkStatus());
         myBike.start();
-        assertEquals(1, myBike.checkGear());
+        assertEquals(0, myBike.checkGear());
         assertEquals(0, myBike.checkSpeedometer());
 
         myBike.accelerator();
@@ -165,7 +165,7 @@ public class bikeTest {
     public void bikeGear1_speedReduceBy1(){
         assertFalse(myBike.checkStatus());
         myBike.start();
-        assertEquals(1, myBike.checkGear());
+        assertEquals(0, myBike.checkGear());
 
         for (int count = 1; count <= 15; count++){
             myBike.accelerator();
